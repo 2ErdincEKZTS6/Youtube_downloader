@@ -6,8 +6,8 @@ path=r"C:\Users\ERDİNÇ\Desktop\python ile indirilen videolar"
 
 url=input("enter video's url:")
  
-yt = YouTube(url, on_progress_callback = on_progress)
+yt = pytubefix.YouTube(url, on_progress_callback = on_progress)
 print(yt.title)
- 
+
 ys = yt.streams.get_lowest_resolution(url)
 ys.download(path)
